@@ -1,4 +1,4 @@
-import sys, queue
+import sys, datastructure
 
 def deliminate(op):
     cmd = op[0]
@@ -16,6 +16,6 @@ def deliminate(op):
         print(queue.back())
 
 N = int(input())
-queue = queue.Queue()
+queue = datastructure.Queue()
 for i in range(N):
     deliminate(sys.stdin.readline().rstrip().split(' '))
